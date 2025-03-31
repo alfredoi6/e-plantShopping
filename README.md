@@ -28,16 +28,6 @@
 <details>
   <summary>Task 2: State management using Redux</summary>
 
-- [x] Display the Plant Array
-- [x] Display Plant Details within a `<div>` tag with class name `product-grid`
-- [x] Display an **Add to Cart** button for each plant
-- [x] Create a state variable named `addedToCart` using the `useState` hook to track which products are added to the cart
-- [x] Implement **Add to Cart** functionality
-- [x] `handleAddToCart()` function will:
-   - Carry the details of the selected plant
-   - Add the plant details to the cart at a global level using `CartSlice.jsx`
-- [x] Save your changes and push the code to your GitHub repository
-
 - [ ] Define Reducer Functions
     - Now implement the reducer property of the slice for adding, removing, and updating the number of items in the cart.
     - These reducer functions will be called when user wants to add or remove the quantity of plants within the cartItems component.
