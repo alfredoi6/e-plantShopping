@@ -1,14 +1,24 @@
-# coding-project-template
+# Tasks to Complete
 
+---
 
-# Tasks to complete
-[X] - Clone repo
-[X] - Configure github pages
-[ ] - Task 1: ProductList component Layout
-    [X] - Display the Plant Array
-    [X] - Display Plant Details within div tag with class name product-grid.
-    [X] - Display an Add to Cart button for each plant.
-    [X] - Create one variable named addedToCart for state management using the useState hook to track which products are added to the cart.
-    [X] - Add to Cart Functionality
-    [X] - The handleAddToCart() function will carry the details of that plant which user want to add in the cart. And the plant details to the cart at a global level using CartSlice.jsx.
-    [X] - Make sure that you save these changes by pushing your code to your GitHub repository.
+## General Setup
+- [x] Clone repo
+- [x] Configure GitHub Pages
+
+---
+
+<details>
+  <summary>Task 1: ProductList Component Layout</summary>
+
+- [x] Display the Plant Array
+- [x] Display Plant Details within a `<div>` tag with class name `product-grid`
+- [x] Display an **Add to Cart** button for each plant
+- [x] Create a state variable named `addedToCart` using the `useState` hook to track which products are added to the cart
+- [x] Implement **Add to Cart** functionality
+- [x] `handleAddToCart()` function will:
+   - Carry the details of the selected plant
+   - Add the plant details to the cart at a global level using `CartSlice.jsx`
+- [x] Save your changes and push the code to your GitHub repository
+
+</details>
