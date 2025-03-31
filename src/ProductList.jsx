@@ -12,7 +12,7 @@ function ProductList({ onHomeClick }) {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.items);
     const cartItemCount = cartItems.reduce((total,items) => total + items.quantity, 0);
-
+    const isInCart = (name) => cartItems.some(item => item.name === name);
     const plantsArray = plants;
    
     const styleObj = {
@@ -29,6 +29,7 @@ function ProductList({ onHomeClick }) {
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '1100px',
+        marginLeft:'100px',
     }
     const styleA = {
         color: 'white',
@@ -106,13 +107,16 @@ function ProductList({ onHomeClick }) {
                      <div key={index} className='category-section'>
                         
                         {plantsSection.plants.map((plant, plantIndex) => (
+                            // const isAddedToCart = addedToCart.ite
                             <div className="product-card" key={plantIndex}>
                                 <img class="product-image" src={plant.image} alt={plant.name}/>
                                 <div class="product-title">{plant.name}</div>
                                 <div className="product-description">{plant.description}</div>
                                 <div className="product-cost">{plant.cost}</div>
-                                <button className="product-button" 
-                                onClick={() => handleAddToCart(plant)}>Add to Cart</button>
+                                <button className={`product-button ${isInCart(plant.name) ? 'added-to-cart' : '' } `}
+                                onClick={() => handleAddToCart(plant)}>
+                                    {isInCart(plant.name)? "Added to Cart" : "Add to Cart"}
+                                </button>
 
                             </div>
                            ))}
