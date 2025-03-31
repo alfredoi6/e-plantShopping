@@ -58,7 +58,22 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.category-section-header{
+    margin:15px;
+    border-top: 1px solid black;
+    border-bottom:1px solid black;
+}
+.category-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    /* background-color: pink; */
+    /* justify-content: space-between; */
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
 /* Product Card */
 .product-card {
     flex: 0 0 calc(33.33% - 20px); /* Adjust width for 3 cards per row with 20px gap */

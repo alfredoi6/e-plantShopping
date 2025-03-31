@@ -19,7 +19,7 @@ export const CartSlice = createSlice({
     },
     removeItem: (state, action) => {
         console.log(`reducers.removeItem: ${action}`);
-        const {name} = action.payload;
+        const name = action.payload;
         state.items = state.items.filter(item => item.name !== name);
     },
     updateQuantity: (state, action) => {
