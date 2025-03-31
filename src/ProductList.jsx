@@ -24,6 +24,7 @@ function ProductList({ onHomeClick }) {
         alignIems: 'center',
         fontSize: '20px',
     }
+    
     const styleObjUl = {
         display: 'flex',
         justifyContent: 'space-between',
@@ -31,6 +32,7 @@ function ProductList({ onHomeClick }) {
         width: '1100px',
         marginLeft:'100px',
     }
+
     const styleA = {
         color: 'white',
         fontSize: '30px',

@@ -48,10 +48,20 @@
 <details>
   <summary>Task 3: Cartitems component</summary>
 
-- [ ] Calculate the total for all items in the cart.
-- [ ] Calculate the subtotal for each plant type in the cart.
-- [ ] Continue shopping
-- [ ] Increment and decrement the number of each plant type in the cart
-- [ ] Remove (delete) a plant type from the cart altogether.
+- [X] Calculate the total for all items in the cart.
+- [X] Calculate the subtotal for each plant type in the cart.
+- [X] Continue shopping
+- [X] Increment and decrement the number of each plant type in the cart
+- [X] Remove (delete) a plant type from the cart altogether.
+
+</details>
+
+---
+
+<details>
+  <summary>Task 4/5: Redux Integration</summary>
+
+- [X] Redux store initialization
+- [X] Dispatch integration (addItem, updateQuantity, removeItem)
 
 </details>
